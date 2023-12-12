@@ -1,5 +1,6 @@
 {
   "name": "futuresports-app",
+  "homepage": "https://crostinopanino.github.io/futuresports-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
