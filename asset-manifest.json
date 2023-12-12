@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/futuresports-app/static/css/main.3c66a4bd.css",
-    "main.js": "/futuresports-app/static/js/main.58fe5397.js",
+    "main.js": "/futuresports-app/static/js/main.875333ab.js",
     "static/js/787.0efb6338.chunk.js": "/futuresports-app/static/js/787.0efb6338.chunk.js",
     "static/media/backgroundImage.png": "/futuresports-app/static/media/backgroundImage.8cb2a51dba39d0771017.png",
     "index.html": "/futuresports-app/index.html",
     "main.3c66a4bd.css.map": "/futuresports-app/static/css/main.3c66a4bd.css.map",
-    "main.58fe5397.js.map": "/futuresports-app/static/js/main.58fe5397.js.map",
+    "main.875333ab.js.map": "/futuresports-app/static/js/main.875333ab.js.map",
     "787.0efb6338.chunk.js.map": "/futuresports-app/static/js/787.0efb6338.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c66a4bd.css",
-    "static/js/main.58fe5397.js"
+    "static/js/main.875333ab.js"
   ]
 }
