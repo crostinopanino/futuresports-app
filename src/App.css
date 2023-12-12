@@ -1,0 +1,400 @@
+a {
+  text-decoration: none;
+  color: #00FFFF;
+}
+
+a:visited {
+  color: #FF00FF;
+}
+
+a:hover,
+a:focus {
+  color: #AAFFFF;
+}
+
+a:active {
+  color: #00FFFF;
+}
+
+/* Navigation bar styles */
+.Navigation {
+  color: #d3d3d3;
+  background-color: #000000;
+  width: 100%;
+  position: fixed;
+  padding: 5px;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Search bar styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding-right: 20px;
+}
+
+.search-bar input[type="text"] {
+  margin-right: 10px; 
+  padding: 5px;
+}
+
+.search-bar button {
+  padding: 5px;
+}
+
+/* Navigation menu list styles */
+ul.NavigationMenus {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0; 
+  list-style: none; 
+}
+
+
+ul.NavigationMenus li {
+  margin-right: 30px; 
+}
+
+
+ul.NavigationMenus li a {
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  padding: 10px 0; 
+}
+
+
+ul.NavigationMenus li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fff;
+  height: 1px;
+  width: 0%;
+  bottom: 0;
+  transition: width 0.3s;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+ul.NavigationMenus li a:hover:after,
+ul.NavigationMenus li.activeNavItem a:after {
+  width: 100%;
+}
+
+
+.activeNavItem a:after {
+  background: #f2f2f270;
+}
+
+.Header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/public/images/backgroundImage.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  color: #fff; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+  margin: 0;
+  padding: 0;
+}
+
+
+.Main {
+  display: flex;
+}
+
+.Heading {
+  flex: 0 0 100%;
+}
+
+.MainSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.AsideSection {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Results.css */
+.container {
+  margin-bottom: 20px;
+}
+
+
+.match-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} 
+
+
+.match-container img {
+  max-width: 80px; 
+  height: auto;
+  margin-right: 10px;
+}
+
+.score {
+  font-size: 54px; 
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#results::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Members registration form*/
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3a3a3a;
+  color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.thank-you-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: #435660 ;
+}
+
+/* Common form styles */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-input {
+  margin-bottom: 15px;
+}
+
+.form-input label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input input[type="text"],
+.form-input input[type="email"],
+.form-input input[type="checkbox"],
+.form-input textarea {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form-input .error-message {
+  color: red;
+  font-size: 0.8em;
+}
+
+.form-container .submit-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Styling label for checkbox to align properly */
+.form-input label {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Table for Community and Members */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  min-width: 400px; 
+}
+
+.table th, 
+.table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  background-color: #f4f4f4;
+}
+
+.table th {
+  background-color: #c5c5c5;
+  color: #333;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd; 
+}
+
+/* Sponsor logos */
+.sponsors-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.sponsor-item {
+  /* Styling specific to each sponsor item */
+  width: 120px; 
+  padding: 10px;
+  text-align: center;
+}
+
+.sponsor-item img {
+  max-width: 100%; /* Responsive images */
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+/* News sections */
+.news-article {
+  box-sizing: border-box;
+  float: left;
+  width: calc(50% - 22px); 
+  padding: 10px;
+  margin: 10px;
+  height: 200px; 
+  overflow: auto; 
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #0000001a;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+/* PhotoGallery Carousel */
+.PhotoGallery {
+  margin: auto;
+  padding: 20px;
+  max-width: 600px; 
+}
+
+
+.carousel .slide img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
+}
+
+.carousel .legend {
+  margin-top: 10px;
+  text-align: center;
+  color: #333; 
+}
+
+
+/* Responsive design */
+@media all and (max-width: 768px) {
+  .PhotoGallery {
+    width: 100%;
+  }
+}
+
+.WeatherInformation {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+@media (max-width: 600px) { 
+  .news-article {
+    width: 100%; 
+    margin: 10px 0; 
+  }
+}
+
+.Footer {
+  clear: both;
+  color: #d3d3d3;
+  background-color: #000000;
+  width: 100%;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .Main {
+    display: block;
+  }
+  .Header {
+    margin-top: 20px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .PhotoGallery {
+    max-width: 100%; 
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    flex-direction: column; 
+  }
+}
+
+@media (max-width: 768px) {
+  .match-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .match-container img {
+    max-width: 30%;
+    margin-right: 0;
+  }
+
+  .score {
+    margin-top: 5px; 
+  }
+}
